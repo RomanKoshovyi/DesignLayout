@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(0deg, #001131, #0C3F9D);
+    /* background-image: url("Media/darknight.jpg"); */
+}
+
+.main{
+    border-left: 2px ridge #EB9902;
+    border-right: 2px ridge #EB9902;
+    height: 100%;
+    width: 90%;
+    margin: 0px auto;
+    background: #04286B;
+}
+
+.top{
+    height: 180px;
+    background: radial-gradient(ellipse at 50% 50%, #976508 -20%, #04286B 70%);
+    padding: 0px;
+}
+
+.header{
+    border-bottom: 2px ridge #EB9902;
+    border-image: linear-gradient(to right, #04286B, #EB9902, #04286B);
+    border-image-slice: 1;
+    height: 100px;
+    background: #04286B;
+    display: flex;
+}
+
+.logo > img{
+    width: 100%;
+    height: 100%;
+}
+
+.navigation{
+    margin: auto;
+}
+
+.navmain{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.name{
+    font-size: 40px;
+}
+
+.active{
+    background: linear-gradient(#04286b, #ffa60070);
+}
+
+.login > .btn{
+    margin: 0px 20px;
+}
+
+.dropdown-menu{
+    background: linear-gradient(#04286b, #0457b6);
+}
+.dropdown-item{
+    color: white;
+}
+.dropdown-item:hover{
+    background: radial-gradient(#b99e00, #a85a00);;
+    color:white;
+}
+
+.btn-outline-warning:hover{
+    background: linear-gradient(#04286b, #ffa60070);
+    color:white;
+}
