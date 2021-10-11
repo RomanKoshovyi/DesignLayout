@@ -2,52 +2,69 @@
 <html lang="UK">
     <head>
         <meta charset="UTF-8">
-        <title>My Site</title>
-		<link rel="shortcut icon" href = "favicon.ico">
+        <title>Skillet Band</title>
+		<link rel="shortcut icon" href = "Media\SkilletLogo.png">
         <link rel="stylesheet" href="library/bootstrap.css">
 		<link rel="stylesheet" href="style.css"/>
     </head>
     <body>
         <div class="main container">
-            <div class="container top">
+            <div class="container-fluid top">
+                <div class="banner">
+                    <img src = "Media/Banner.png" class="img-fluid" alt="Banner">
+                </div>
                 <div class="b5-row header sticky-top">
-                    <div class="col-auto logo mx-3 my-3">
-                        <img src="Media\demo.png" class="mx-auto d-block" alt="logo">
-                    </div>
-                    <div class="col-10 navigation">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-                            <div class="container-fluid navmain">
-                                <a class="navbar-brand name rounded-3" href="#">My site</a>
+                    <div class="col-12 navigation">
+                        <nav class="navbar navbar-expand-md navbar-dark bg-black">
+                            <div class="navmain">
+                                <!-- <button class="mybutton">
+                                    Home
+                                </button>
+                                <span class = "space"></span>
+                                <div class="dropdown"></div>
+                                <button class="mybutton">
+                                    News
+                                </button>
+                                <button class="mybutton">
+                                    Media
+                                </button>
+                                <button class="mybutton">
+                                    Our Story
+                                </button>
+                                <span class = "space"></span>
+                                <button class="mybutton">
+                                    Log In
+                                </button> -->
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navitems">
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link active rounded-3" aria-current="page" href="#">Home</a>
+                                            <a class="nav-link" href="#">Home</a>
                                         </li>
-                                        <li class="nav-item dropdown rounded mx-3">
-                                            <a class="nav-link dropdown-toggle rounded-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link" aria-current="page" href="#">News</a>
+                                        </li>
+                                        <li class="nav-item dropdown mx-3">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Media
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <li><a class="dropdown-item" href="#">Photo</a></li>
-                                            <li><a class="dropdown-item" href="#">Video</a></li>
                                             <li><hr class="dropdown-divider"></li>
-                                            <li><a class="dropdown-item" href="#">Add content</a></li>
+                                            <li><a class="dropdown-item" href="#">Audio</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Video</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link rounded-3" href="#">FAQ</a>
+                                            <a class="nav-link" href="#">Our Story</a>
                                         </li>
-                                        <li class="nav-item rounded mx-3">
-                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Forum</a>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link" href="#">Log In</a>
                                         </li>
                                     </ul>
-                                    <div class="login">
-                                        <button class="btn btn-outline-warning" type="submit">Registration</button>
-                                        <button class="btn btn-outline-warning" type="submit">Log in</button>
-                                    </div>
                                 </div>
                             </div>
                         </nav>

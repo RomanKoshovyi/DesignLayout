@@ -1,42 +1,50 @@
-*{
-    box-sizing: border-box;
-}
-
 html, body{
     height: 100%;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(0deg, #001131, #0C3F9D);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(0deg, #626868, #1f1f1f);
     /* background-image: url("Media/darknight.jpg"); */
 }
 
 .main{
-    border-left: 2px ridge #EB9902;
-    border-right: 2px ridge #EB9902;
+    border-left: 2px ridge #172049;
+    border-right: 2px ridge #172049;
     height: 100%;
-    width: 90%;
+    width: 100%;
     margin: 0px auto;
-    background: #04286B;
+    padding: 0px;
+    background: linear-gradient(90deg, rgb(84, 90, 92), rgb(130, 139, 146), rgb(84, 90, 92));
 }
 
 .top{
-    height: 180px;
-    background: radial-gradient(ellipse at 50% 50%, #976508 -20%, #04286B 70%);
     padding: 0px;
 }
 
+/* .mybutton{
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-left : 2px ridge gray;
+    border-right : 2px ridge gray;
+    height: 100%;
+    width: 18%;
+    color:rgb(212, 206, 206);
+    text-transform: uppercase;
+}
+
+.space{
+    width: 4.5%;
+} */
+
 .header{
-    border-bottom: 2px ridge #EB9902;
-    border-image: linear-gradient(to right, #04286B, #EB9902, #04286B);
+    border-bottom: 2px ridge #ffffff;
+    border-image: linear-gradient(to right, #2a3342, #8c8d8f, #2a3342);
     border-image-slice: 1;
-    height: 100px;
-    background: #04286B;
+    background: rgb(100, 110, 107);
     display: flex;
 }
 
-.logo > img{
-    width: 100%;
-    height: 100%;
+.header > *{
+    text-transform: uppercase;
 }
 
 .navigation{
@@ -44,17 +52,26 @@ html, body{
 }
 
 .navmain{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 120%;
+}
+
+.navbar{
+    padding: 0px;
 }
 
 .name{
-    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    vertical-align: bottom;
+    font-size: 100%;
+    margin: 0px;
 }
 
 .active{
-    background: linear-gradient(#04286b, #ffa60070);
+    color: rgb(201, 201, 114);
 }
 
 .login > .btn{
@@ -62,17 +79,12 @@ html, body{
 }
 
 .dropdown-menu{
-    background: linear-gradient(#04286b, #0457b6);
+    background: linear-gradient(90deg, rgb(84, 90, 92), rgb(130, 139, 146));
 }
 .dropdown-item{
     color: white;
 }
 .dropdown-item:hover{
-    background: radial-gradient(#b99e00, #a85a00);;
-    color:white;
-}
-
-.btn-outline-warning:hover{
-    background: linear-gradient(#04286b, #ffa60070);
+    background: linear-gradient(90deg, rgb(71, 75, 97), rgb(33, 67, 94));
     color:white;
 }
