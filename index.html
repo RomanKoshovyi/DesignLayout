@@ -17,41 +17,23 @@
                     <div class="col-12 navigation">
                         <nav class="navbar navbar-expand-md navbar-dark bg-black">
                             <div class="navmain">
-                                <!-- <button class="mybutton">
-                                    Home
-                                </button>
-                                <span class = "space"></span>
-                                <div class="dropdown"></div>
-                                <button class="mybutton">
-                                    News
-                                </button>
-                                <button class="mybutton">
-                                    Media
-                                </button>
-                                <button class="mybutton">
-                                    Our Story
-                                </button>
-                                <span class = "space"></span>
-                                <button class="mybutton">
-                                    Log In
-                                </button> -->
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navitems">
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link" href="#">Home</a>
+                                            <a class="nav-link" href="#" onclick="HomeShow()">Home</a>
                                         </li>
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link" aria-current="page" href="#">News</a>
+                                            <a class="nav-link" aria-current="page" href="#" onclick="NewsShow()">News</a>
                                         </li>
                                         <li class="nav-item dropdown mx-3">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Media
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#">Photo</a></li>
+                                            <li><a class="dropdown-item" href="#" onclick="GalleryShow()">Photo</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#">Audio</a></li>
                                             <li><hr class="dropdown-divider"></li>
@@ -70,7 +52,81 @@
                         </nav>
                     </div>
                 </div>
+                <div class="col-md-10 offset-md-1 home">
+                    <!-- homepage -->
+                    <div class="warning rounded-pill alert alert-info text-center develop-alert" role="alert">
+                        Read this, please! This site is now <code>&lt;developing&gt;</code> and will be introduced soon!<br>
+                        Stay with us!
+                    </div>
+                </div>
+                <div class="col-md-10 offset-md-1 news">
+                    <!-- newspage -->
+                    <span class = "sorry"> 
+                        No news yet :)
+                    </span>
+                </div>
+                <div class="row gallery">
+                    <div class="lightbox">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <img
+                                src="Media\gallery-pic-1.jpg"
+                                alt="Lightbox image 1"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                                <img
+                                src="Media\gallery-pic-2.jpg"
+                                alt="Lightbox image 2"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                                <img
+                                src="Media\gallery-pic-7.jpg"
+                                alt="Lightbox image 2"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <img
+                                src="Media\gallery-pic-3.jpg"
+                                alt="Lightbox image 3"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                                <img
+                                src="Media\gallery-pic-4.jpg"
+                                alt="Lightbox image 4"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                                <img
+                                src="Media\gallery-pic-8.jpg"
+                                alt="Lightbox image 4"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                            </div>
+                            <div class="col-lg-4">
+                                <img
+                                src="Media\gallery-pic-5.jpg"
+                                alt="Lightbox image 3"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                                <img
+                                src="Media\gallery-pic-6.jpg"
+                                alt="Lightbox image 4"
+                                class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <footer class="fixed-bottom container rounded">
+                <div class="col-4 offset-1">
+                    &#169; All rights reserved
+                </div>
+                <div class="col-4 offset-2">
+                    Tel: +380123456789
+                </div>
+            </footer>
         </div>
 
 
