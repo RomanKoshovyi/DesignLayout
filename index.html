@@ -26,25 +26,27 @@
                                             <a class="nav-link" href="#" onclick="HomeShow()">Home</a>
                                         </li>
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link" aria-current="page" href="#" onclick="NewsShow()">News</a>
+                                            <a class="nav-link" aria-current="page" href="#" onclick="NewsShow()">News <span class="badge bg-secondary">2</span></a>
                                         </li>
                                         <li class="nav-item dropdown mx-3">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Media
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item" href="#" onclick="GalleryShow()">Photo</a></li>
+                                            <li><a class="dropdown-item" href="#" onclick="GalleryShow()">Gallery</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#">Audio</a></li>
                                             <li><hr class="dropdown-divider"></li>
                                             <li><a class="dropdown-item" href="#">Video</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#" onclick="MerchShow()">Merch</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item mx-3">
                                             <a class="nav-link" href="#">Our Story</a>
                                         </li>
                                         <li class="nav-item mx-3">
-                                            <a class="nav-link" href="#">Log In</a>
+                                            <a class="nav-link" href="#" onclick="window.location = 'Registration/Form.html'">Log In</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -52,20 +54,117 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-md-10 offset-md-1 home">
-                    <!-- homepage -->
-                    <div class="warning rounded-pill alert alert-info text-center develop-alert" role="alert">
-                        Read this, please! This site is now <code>&lt;developing&gt;</code> and will be introduced soon!<br>
-                        Stay with us!
+            </div>
+            <div class = "content">
+                <div class="col home">
+                    <!-- home -->
+                    <div class="greeting">
+                        <h1 class="display-3">Welcome to Skillet Band`s base!</h1>
+                        <h2>The information base about Skillet - Rock music group</h2>
+                        <hr class="my-3">
+                        <p>Skillet is a Christian rock band known all over the world. On this site you can find useful information about the band.<br> Also there are the latest news, concerts and merch. Stay with us!</p>
+                        <p class="lead">
+                        <input type="button" class="btn btn-primary btn-lg" href="#" role="button" value="Merch" onclick="MerchShow()">
+                        <input type="button" class="btn btn-primary btn-lg" href="#" role="button" value="History">
+                        </p>
+                    </div>
+                    <div class="card advantage">
+                        <img src="Media\darknight.jpg" class="card-img-top" style="height: 0.6vw;" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Advantage #1<img src = "Media\ok.png" class = "right-corner-aligned" alt="nice"></h3>
+                          <h5 class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime similique magnam ad molestiae dolor numquam provident consectetur corrupti autem quam labore laborum a est illum fugiat, laudantium id harum atque veniam laboriosam reprehenderit libero ducimus? Iure molestias reiciendis ratione ducimus doloribus suscipit perferendis repudiandae perspiciatis necessitatibus voluptas velit maxime odio nam modi ipsam aperiam nihil quaerat numquam, aliquam quos deserunt a? </h5>
+                        </div>
+                    </div>
+                    <div class="card advantage">
+                        <img src="Media\darknight.jpg" class="card-img-top" style="height: 0.6vw;" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Advantage #2<img src = "Media\ok.png" class = "right-corner-aligned" alt="nice"></h3>
+                          <h5 class="card-text">A mollitia dolorum maxime quaerat? Eos earum vero doloribus perferendis iste mollitia, porro enim neque molestiae non amet asperiores veniam nisi temporibus quaerat sed nam reiciendis architecto id. Repellat repudiandae nisi illum corporis error animi eius voluptate ab dolorum totam ad mollitia veniam, earum excepturi voluptas ullam delectus modi quaerat quos laboriosam. </h5>
+                        </div>
+                    </div>
+                    <div class="card advantage">
+                        <img src="Media\darknight.jpg" class="card-img-top" style="height: 0.6vw;" alt="...">
+                        <div class="card-body">
+                          <h3 class="card-title">Advantage #3<img src = "Media\ok.png" class = "right-corner-aligned" alt="nice"></h3>
+                          <h5 class="card-text">Ratione eius hic repudiandae magni, ipsam blanditiis similique, neque iste error reprehenderit et sapiente quaerat ea eligendi facere! Sint, ut similique quisquam at in veniam vel amet deleniti pariatur optio reiciendis ex aliquid illo esse repudiandae, molestiae quod eaque corrupti praesentium.</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-10 offset-md-1 news">
-                    <!-- newspage -->
-                    <span class = "sorry"> 
-                        No news yet :)
-                    </span>
+                
+
+                
+                <div class="col-md-12 news">
+                    <!-- news -->
+                    <div class="pageLabel">News</div>
+                    <div class="mainNewsBlock">
+                        <div class="newsBlock row">
+                            <div class="col-5 imager"><img src = "Media\maxresdefault.jpg" class = "news-pic"></div>
+                            <div class="col">
+                                <span class = "newsTopic">New single came!</span><br>
+                                <span class = "newsText">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit sed molestiae doloremque pariatur, beatae voluptatibus, inventore deserunt illo libero obcaecati quam dolore autem eos perspiciatis. Perspiciatis odit cum fugiat!
+                                </span>
+                                <div class="forReadmore"><span class = "dateOfNews col">12.11.2021</span>
+                                    <button class="btn btn-primary readmore col-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#newsAddings1" aria-expanded="false" aria-controls="newsAddings1">
+                                    Read more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="newsAddings1">
+                            <div class="card card-body newsAdded">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium, facere ipsam et ipsum, voluptatem fuga iusto est dolore molestias neque nisi quae maxime, itaque dignissimos aperiam corporis illum reiciendis repellat ex repellendus. Neque aperiam fugiat sunt recusandae aliquam expedita impedit accusamus, sint quibusdam voluptate odio eum illum, et debitis sed facere deleniti non quaerat, voluptatum necessitatibus suscipit perspiciatis ipsam corporis? Quod corrupti ea alias iure repellendus hic. Ipsam facilis nisi sint, iusto consequatur magnam repudiandae officiis voluptatum inventore, incidunt quo tenetur doloribus unde assumenda totam ullam dignissimos quis explicabo fuga, accusamus sequi nulla praesentium. Minima odit nesciunt dicta adipisci repellendus distinctio pariatur natus commodi sequi asperiores illum consectetur quod animi, aperiam quasi aspernatur error, numquam, excepturi atque doloremque consequatur inventore! Placeat repellendus deleniti, distinctio quo exercitationem ad saepe ex, quod totam eos aliquid voluptatibus doloribus aperiam id quibusdam dolorem voluptas a dignissimos eaque perferendis autem hic eum consectetur! Possimus, expedita. Sed veniam beatae consectetur dolorum. Dignissimos ab illum deserunt doloremque!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mainNewsBlock">
+                        <div class="newsBlock row">
+                            <div class="col-5 imager"><img src = "Media\attachment-skillet-john-cooper-2020.jpg" class = "news-pic"></div>
+                            <div class="col">
+                                <span class = "newsTopic">Concert in Ukraine is come!</span><br>
+                                <span class = "newsText">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit sed molestiae doloremque pariatur, beatae voluptatibus, inventore deserunt illo libero obcaecati quam dolore autem eos perspiciatis. Perspiciatis odit cum fugiat!
+                                </span>
+                                <div class="forReadmore"><span class = "dateOfNews col">11.11.2021</span>
+                                    <button class="btn btn-primary readmore col-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#newsAddings2" aria-expanded="false" aria-controls="newsAddings2">
+                                    Read more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="newsAddings2">
+                            <div class="card card-body newsAdded">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium, facere ipsam et ipsum, voluptatem fuga iusto est dolore molestias neque nisi quae maxime, itaque dignissimos aperiam corporis illum reiciendis repellat ex repellendus. Neque aperiam fugiat sunt recusandae aliquam expedita impedit accusamus, sint quibusdam voluptate odio eum illum, et debitis sed facere deleniti non quaerat, voluptatum necessitatibus suscipit perspiciatis ipsam corporis? Quod corrupti ea alias iure repellendus hic. Ipsam facilis nisi sint, iusto consequatur magnam repudiandae officiis voluptatum inventore, incidunt quo tenetur doloribus unde assumenda totam ullam dignissimos quis explicabo fuga, accusamus sequi nulla praesentium. Minima odit nesciunt dicta adipisci repellendus distinctio pariatur natus commodi sequi asperiores illum consectetur quod animi, aperiam quasi aspernatur error, numquam, excepturi atque doloremque consequatur inventore! Placeat repellendus deleniti, distinctio quo exercitationem ad saepe ex, quod totam eos aliquid voluptatibus doloribus aperiam id quibusdam dolorem voluptas a dignissimos eaque perferendis autem hic eum consectetur! Possimus, expedita. Sed veniam beatae consectetur dolorum. Dignissimos ab illum deserunt doloremque!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mainNewsBlock">
+                        <div class="newsBlock row">
+                            <div class="col-5 imager"><img src = "Media\Skillet-Legendary-kg-music.club_.jpg" class = "news-pic"></div>
+                            <div class="col">
+                                <span class = "newsTopic">Another news</span><br>
+                                <span class = "newsText">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit sed molestiae doloremque pariatur, beatae voluptatibus, inventore deserunt illo libero obcaecati quam dolore autem eos perspiciatis. Perspiciatis odit cum fugiat!
+                                </span>
+                                <div class="forReadmore"><span class = "dateOfNews col">08.11.2021</span>
+                                    <button class="btn btn-primary readmore col-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#newsAddings3" aria-expanded="false" aria-controls="newsAddings3">
+                                    Read more
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="newsAddings3">
+                            <div class="card card-body newsAdded">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium, facere ipsam et ipsum, voluptatem fuga iusto est dolore molestias neque nisi quae maxime, itaque dignissimos aperiam corporis illum reiciendis repellat ex repellendus. Neque aperiam fugiat sunt recusandae aliquam expedita impedit accusamus, sint quibusdam voluptate odio eum illum, et debitis sed facere deleniti non quaerat, voluptatum necessitatibus suscipit perspiciatis ipsam corporis? Quod corrupti ea alias iure repellendus hic. Ipsam facilis nisi sint, iusto consequatur magnam repudiandae officiis voluptatum inventore, incidunt quo tenetur doloribus unde assumenda totam ullam dignissimos quis explicabo fuga, accusamus sequi nulla praesentium. Minima odit nesciunt dicta adipisci repellendus distinctio pariatur natus commodi sequi asperiores illum consectetur quod animi, aperiam quasi aspernatur error, numquam, excepturi atque doloremque consequatur inventore! Placeat repellendus deleniti, distinctio quo exercitationem ad saepe ex, quod totam eos aliquid voluptatibus doloribus aperiam id quibusdam dolorem voluptas a dignissimos eaque perferendis autem hic eum consectetur! Possimus, expedita. Sed veniam beatae consectetur dolorum. Dignissimos ab illum deserunt doloremque!
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="row gallery">
+                    <!-- gallery -->
                     <div class="lightbox">
                         <div class="row">
                             <div class="col-lg-4">
@@ -117,20 +216,106 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="row merch">
+                    <!-- merch -->
+                    <span class = "pageLabel">Skillet Merch</span>
+                    <div class="merchCardsBlock row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="Media\skilletmask.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Skillet Mask</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis suscipit harum animi aliquid. Praesentium velit ad, voluptate id magni ipsam beatae nobis facere assumenda distinctio sapiente impedit dolor ullam exercitationem?</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MerchBuy">
+                                Buy now!
+                            </button>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="width: 18rem;">
+                            <img src="Media\ur,mask_flatlay_front,product,600x600.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Mask "Sick of it!"</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis suscipit harum animi aliquid. Praesentium velit ad, voluptate id magni ipsam beatae nobis facere assumenda distinctio sapiente impedit dolor ullam exercitationem?</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MerchBuy">
+                                Buy now!
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="Media\33dc4c78ba8111e38ded120785fa0495_8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">T-short "Sick of it!"</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis suscipit harum animi aliquid. Praesentium velit ad, voluptate id magni ipsam beatae nobis facere assumenda distinctio sapiente impedit dolor ullam exercitationem?</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MerchBuy">
+                                Buy now!
+                            </button>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="Media\7dd150ej1ab_470x0.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">T-Short Blue Lightning Skillet</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis suscipit harum animi aliquid. Praesentium velit ad, voluptate id magni ipsam beatae nobis facere assumenda distinctio sapiente impedit dolor ullam exercitationem?</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#MerchBuy">
+                                Buy now!
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class = "pageLabel">Look at us on Google Maps</span>
+                    <div class="googleMapsIntegration">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10441.153397249705!2d-77.03535029027087!3d38.920012236170194!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1636752783178!5m2!1sru!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    </div>
+                </div>
+            </div> <!-- content -->
+
+            <!-- popup window for buy some merch -->
+            <div class="modal fade" id="MerchBuy" tabindex="-1" aria-labelledby="MerchBuyLabel" aria-hidden="true" style="height: 90%;">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="MerchBuyLabel">Merch buy process</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="Media\7dd150ej1ab_470x0.jpg" style="width: 100%;" alt="...">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sequi nulla amet repellendus alias cum laudantium rem labore non vel consequatur, obcaecati et fugiat incidunt inventore iusto quidem enim, blanditiis atque esse! Vel autem voluptate reprehenderit ducimus tempora similique molestias, impedit, minima eligendi est, voluptatum iure. Impedit, at atque. Unde ab praesentium assumenda quisquam. Illum nostrum quasi ipsam esse quaerat tempora sunt ducimus nemo ab, unde ad neque fuga quod libero rem temporibus earum ullam incidunt quibusdam repellendus assumenda amet voluptas magnam maiores. Dolores eum, ea distinctio repellat cupiditate qui fugit numquam! Esse sequi omnis itaque exercitationem. Et facere totam, dolor consectetur voluptatem officiis quam quasi, eum illum dolorum ipsum! Architecto illum eum blanditiis provident dolorem, in consectetur, eos fugiat expedita mollitia animi recusandae adipisci modi! Iste odio minima quae illum consequatur, accusamus et eos fugit facilis laboriosam obcaecati aperiam explicabo veniam unde beatae ducimus. Facere nisi expedita excepturi sint blanditiis cupiditate architecto magnam accusamus totam aliquid! Porro in distinctio repellendus debitis. Ipsa, maiores expedita! Natus, officia. Labore delectus ab nobis provident quae voluptas beatae sed. Temporibus iure incidunt voluptatem, animi libero repellat consequatur architecto quae. Molestiae officiis reiciendis maiores. Qui sapiente exercitationem dolorem veritatis laborum maxime aliquid dolores.<br><br>
+                        Price: 123.45$
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Go to confirm!</button>
+                    </div>
+                </div>
             </div>
 
-            <footer class="fixed-bottom container rounded">
-                <div class="col-4 offset-1">
-                    &#169; All rights reserved
+
+            <footer class="fixed-bottom container rounded justify-content-evenly">
+                <div class="row justify-content-evenly">
+                    <div class="col-12">
+                        &#169; All rights reserved
+                    </div>
+                    <div class="col-12 socmediaIcons">
+                        Watch us on social media: <a href = "#"><img src = "Media\fb.png" alt="facebook link"></a>
+                        <a href = "#"><img src = "Media\inst.png" alt="instagram link"></a>
+                        <a href = "#"><img src = "Media\tw.png" alt="twitter link"></a>
+                        <a href = "#"><img src = "Media\yt.png" alt="YouTube link"></a>
+                    </div>
                 </div>
-                <div class="col-4 offset-2">
-                    Tel: +380123456789
+                <div class="row justify-content-evenly">
+                    <div class="col-12">
+                        e-mail: example@gmail.com
+                    </div>
+                    <div class="col-12">
+                        Tel: +380123456789
+                    </div>
                 </div>
             </footer>
         </div>
-
-
-
 
         <script src="library\bootstrap.js"></script>
         <script src="library/jquery-3.6.0.js"></script>

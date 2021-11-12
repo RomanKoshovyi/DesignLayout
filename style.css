@@ -16,7 +16,6 @@ html, body{
     margin: 0px auto;
     width: 100%;
     padding: 0px;
-    padding-bottom: 2vh;
     background: linear-gradient(90deg, rgba(84, 90, 92, 0.5), rgba(130, 139, 146, 0.5), rgba(84, 90, 92, 0.5));
 }
 
@@ -44,7 +43,7 @@ html, body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-size: 150%;
+    font-size: 2vw;
 }
 
 .navbar{
@@ -79,34 +78,163 @@ html, body{
     color:white;
 }
 
-.gallery, .news{
-    margin: 20px auto;
-    display:none;
-}
-
-.sorry{
+.content{
+    padding: 1vw;
     display: flex;
-    font-size: 5vh;
-    color: mediumspringgreen;
-    margin: 50px auto;
+    padding-bottom: 5vw;
+    justify-content: space-evenly;
 }
 
 .home{
     margin-top: 20px;
     display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.develop-alert{
-    margin: 20px auto;
-    font-size: 25px;
+.greeting{
+    border: 0.3vw inset silver;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5vw;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+}
+.greeting .btn{
+    margin: auto 3vw;
 }
 
+.pageLabel{
+    background-color: rgba(0, 0, 0, 0.26);
+    color: whitesmoke;
+    border-radius: 5vw;
+    border-bottom:0.5vw ridge rgb(0, 6, 97);
+    width: 90%;
+    margin: 1vw auto;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+.news{
+    flex-direction: column;
+    padding: 0vw;
+}
+.mainNewsBlock{
+    margin: 1vw;
+}
+.newsBlock{
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: whitesmoke;
+    border: 0.3vw outset silver;
+    margin: 0vw;
+    margin-bottom: 0vw;
+    display: flex;
+    position: relative;
+}
+.imager{
+    display: flex;
+    justify-items: center;
+}
+.news-pic{
+    width: 100%;
+}
+.newsTopic{
+    color: white;
+    font-size: 3vw;
+}
+.newsText{
+    font-size: 1.5vw;
+    color:rgb(224, 224, 224);
+    line-height: 1.5vw;
+}
+.forReadmore{
+    width:100%;
+    display: flex;
+}
+.dateOfNews{
+    font-size: 3vw;
+    color:rgb(148, 225, 255);
+}
+.readmore{
+    font-size: 1.5vw;
+    margin: 1vw;
+}
+.newsAdded{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.534);
+    font-size: 1.2vw;
+    border-top-left-radius: 0vw;
+    border-top-right-radius: 0vw;
+}
+
+.advantage{
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.514);
+    color:snow;
+    width: 95%;
+    margin: 2vw auto 0vw;
+}
+
+.right-corner-aligned{
+    position: absolute;
+    top: 1vw;
+    right: 2vw;
+    height: 3vw;
+}
+
+.merch .card{
+    background-color: rgba(255, 255, 255, 0.411);
+    margin: 1vw;
+    text-align: justify;
+}
+.merchCardsBlock{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.googleMapsIntegration{
+    margin: 2vw auto;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 footer{
     display: flex;
     text-align: center;
-    background: rgba(0, 102, 255, 0.5);
+    background: rgba(73, 83, 99, 0.815);
     color: rgb(255, 255, 255);
-    font-size: 2vh;
+    font-size: 1.8vw;
     margin: auto;
+    padding-bottom: 1vh;
+}
+.socmediaIcons img{
+    height: 2.5vw;
+    width: auto;
+    margin-left: 3%;
+}
+
+.gallery, .home, .news{
+    margin: 1vw auto;
+    display:none;
+}
+
+@media screen and (min-width:1000px){
+    footer{
+        font-size: 2vh;
+    }
+    .socmediaIcons img{
+        height: 3vh;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-device-width:20px) {
+    body .container{
+        width: 100%;
+        margin: 0vw auto;
+    }
 }
